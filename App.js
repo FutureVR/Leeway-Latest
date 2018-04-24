@@ -7,6 +7,9 @@ import ScheduleScreen from './app/screens/ScheduleScreen'
 
 import {Body, View} from 'native-base'
 
+import fireDB from './app/config/database'
+import currentUser from './app/config/currentUser'
+
 export default class App extends React.Component {
 
     constructor() {

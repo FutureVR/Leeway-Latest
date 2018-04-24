@@ -65,12 +65,6 @@ export const AppNavigator = DrawerNavigator({
         },
         "Plan Info": {
             screen: PlanInfoScreen
-        },
-        "CreateEvent": {
-            screen: CreateEventScreen
-        },
-        "Search": {
-            screen: UserSearchScreen
         }
     },
     {

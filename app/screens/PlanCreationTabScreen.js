@@ -77,8 +77,8 @@ const styles = StyleSheet.create({
         textAlign: 'center', // <-- the magic
         fontWeight: 'bold',
         fontSize: 18,
-        borderBottomColor: 'black', 
-        borderBottomWidth: 0, 
+        borderBottomColor: 'black',
+        borderBottomWidth: 0,
         color: '#FFFFFF'
     },
     searchBar: {
