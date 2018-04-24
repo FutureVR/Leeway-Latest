@@ -1,0 +1,32 @@
+[
+  {
+    "id": "1",
+    "username": "Me",
+    "password": "USC",
+    "email": "11"
+  },
+  {
+    "id": "2",
+    "username": "You",
+    "password": "USC",
+    "email": "11"
+  },
+  {
+    "id": "3",
+    "username": "She",
+    "password": "USC",
+    "email": "11"
+  },
+  {
+    "id": "4",
+    "username": "Him",
+    "password": "USC",
+    "email": "11"
+  },
+  {
+    "id": "5",
+    "username": "Them",
+    "password": "USC",
+    "email": "11"
+  }
+]
