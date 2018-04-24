@@ -1,7 +1,7 @@
 import React from 'react';
 import {Header, Left, Button, Icon, Body, Title} from 'native-base'
 
-export default class HeaderComponentComponent extends React.Component {
+export default class HeaderComponent extends React.Component {
 
     openMenu = () => {
         this.props.nav.navigate('DrawerOpen');

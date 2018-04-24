@@ -1,0 +1,22 @@
+[
+    {
+      "id": "1",
+      "name": "Lavalab",
+      "description": "It's a group..."
+    },
+    {
+        "id": "2",
+        "name": "USC",
+        "description": "It's a group..."
+    },
+    {
+        "id": "3",
+        "name": "UCLA",
+        "description": "It's a group..."
+    },
+    {
+        "id": "4",
+        "name": "Corpus Callosum",
+        "description": "It's a group..."
+    }
+]

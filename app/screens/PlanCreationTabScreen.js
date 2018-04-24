@@ -1,10 +1,11 @@
 import React from 'react';
 import {List, Button, Icon, Item, Text, Input, Fab } from 'native-base';
 import {withNavigation} from 'react-navigation'
-import {StyleSheet, View} from 'react-native';
+import {StyleSheet, View, TouchableHighlight} from 'react-native';
 
 
 import CalendarComponent from '../components/CreateMeetup/CalendarComponent'
+import SearchBar from '../components/SearchBarComponent'
 
 class PlansCreationTabScreen extends React.Component {
 
@@ -24,21 +25,9 @@ class PlansCreationTabScreen extends React.Component {
                     <Icon name="people"/>
                 </Item> */}
                 <View>
-                    <View style={styles.searchView}>
-                        {/* <Button block onPress={() => this.props.navigation.navigate('Search')}>
-                            <Text>Search</Text>
-                        </Button> */}
-                        <Text style= {styles.headText} >
-                            Meet with Friends
-                        </Text>
-                        <View>
-                            <Item style={styles.searchBar}>
-                                <Icon name="search" style={{ padding: 10 }} />
-                                <Input placeholder="Invite Friends"/>
-                                <Icon name="people"/>
-                            </Item>
-                        </View>
-                    </View>
+                    <TouchableHighlight onPress={() => this.props.navigation.navigate("Search")}>
+                        <SearchBar/>
+                    </TouchableHighlight>
                     <View style={styles.calendarView}>
                         <CalendarComponent/>
                         <Button block style={styles.createPlanButton} onPress={() => this.props.navigation.navigate('CreateEvent')}>

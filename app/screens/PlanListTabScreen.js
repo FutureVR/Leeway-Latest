@@ -28,7 +28,6 @@ export type EventType = {
 
 const formatJSONToEventType: Array<EventType> = (input) => {
     var out = []
-    console.log(input)
     for (let currEvent of input) {
         var eventTypeFormat = {
             plan_id: currEvent['plan_id'],
@@ -44,7 +43,6 @@ const formatJSONToEventType: Array<EventType> = (input) => {
         eventTypeFormat['image'] = ('image' in currEvent) ? currEvent['location'] : 'http://arcadiawindber.com/wp-content/uploads/2016/10/default.png';
         out.push(eventTypeFormat)
     }
-    console.log(out)
     return out
 }
 
