@@ -294,9 +294,11 @@ export default class SingleCalendar extends PureComponent {
 
         return (
             <View>
-                <Text style={styles.visibleMonthAndYear}>
+                {/* <Text style={styles.visibleMonthAndYear}>
                     {visibleMonthAndYear}
-                </Text>
+                </Text> */}
+                <Text style={styles.headerText} >Availability</Text>
+                <Text style={styles.line}>_____________________</Text>
                 <ScrollView
                     ref={scrollView => { this._scrollView = scrollView; }}
                     horizontal={true}                         // Enable horizontal scrolling
@@ -324,4 +326,21 @@ const styles = StyleSheet.create({
         paddingHorizontal: 15,
         textAlign: 'left',
     },
+    headerText: {
+        textAlign: 'center', // <-- the magic
+        fontWeight: 'bold',
+        fontSize: 18,
+        borderBottomColor: 'black', 
+        borderBottomWidth: 0, 
+        color: '#FFFFFF'
+    },
+    line: {
+        textAlign: 'center', // <-- the magic
+        fontWeight: 'bold',
+        fontSize: 18,
+        borderBottomColor: 'black', 
+        borderBottomWidth: 0, 
+        color: '#FFFFFF',
+        marginTop: 0
+    }
 });

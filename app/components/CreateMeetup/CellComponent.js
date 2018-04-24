@@ -32,7 +32,7 @@ export default class Cell extends PureComponent {
                     onPress={this.onPress}>
                     <View style={styles.cell}>
                         <Text style={styles.cellText}>
-                            {this.props.timeText}
+                            {/* {this.props.timeText} */}
                         </Text>
                     </View>
                 </TouchableOpacity>

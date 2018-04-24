@@ -35,9 +35,9 @@ export default class Dates extends PureComponent {
         } = this.props;
         return (
             <View style={styles.headerCont}>
-                {/*<View>*/}
-                    {/*<HourColumn/>*/}
-                {/*</View>*/}
+                <View>
+                    <HourColumn/>
+                </View>
 
                 {dates.map((date, index) =>
                     <View key={index}>

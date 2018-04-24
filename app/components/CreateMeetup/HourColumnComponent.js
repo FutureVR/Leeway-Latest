@@ -31,7 +31,7 @@ export default class HourColumnComponent extends PureComponent {
         }
 
         var out = []
-        for (let i = 1; i <= 24; i++) {
+        for (let i = 9; i <= 19; i++) {
             var formatted = pad(i, 2) + ":00"
 
             out.push(<View style={styles.timeBox}>
@@ -67,7 +67,7 @@ const styles = {
         borderBottomColor: 'transparent',
         borderBottomWidth: 2,
         paddingHorizontal: 13,
-        paddingVertical: 10,
+        paddingVertical: 9,
     },
     containerActive: {
         borderBottomColor: '#FFFFFF',
@@ -86,6 +86,6 @@ const styles = {
         color: '#FFFFFF',
     },
     timeBox: {
-        paddingVertical: 12,
+        paddingVertical: 5.5,
     },
 };

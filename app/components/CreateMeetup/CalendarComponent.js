@@ -10,7 +10,7 @@ export default class CalendarComponent extends React.Component {
     render() {
         return (
             <View style={styles.container}>
-                <SingleCalendar showDaysAfterCurrent={7} showDaysBeforeCurrent={0} onSelectDate={this.onSelectDate} />
+                <SingleCalendar showDaysAfterCurrent={5} showDaysBeforeCurrent={0} onSelectDate={this.onSelectDate} />
             </View>
         );
     }
@@ -19,7 +19,9 @@ export default class CalendarComponent extends React.Component {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#3F53B1',
+        backgroundColor: '#3F53B1', 
         paddingTop: 20,
+        borderTopLeftRadius: 20,
+        borderTopRightRadius: 20
     }
 });

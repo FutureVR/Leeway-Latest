@@ -64,7 +64,7 @@ export default class Date extends PureComponent {
         const { index} = this.props;
 
         var out = []
-        for (let i = 8; i <= 22; i++) {
+        for (let i = 9; i <= 20; i++) {
             var formatted = i + ":00"
             var cellId = date + "-" + i
 
